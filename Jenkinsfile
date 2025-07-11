@@ -1,3 +1,4 @@
+@Library('my-shared-lib') _
 pipeline {
     agent any
 
@@ -10,6 +11,12 @@ pipeline {
     }
 
     stages {
+        stage('Hello') {
+            steps {
+                sayHello('Jenkins')
+            }
+        }
+
         stage('Checkout External Project') {
             steps {
                 git branch: 'main',
