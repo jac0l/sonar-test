@@ -17,6 +17,13 @@ pipeline {
             }
         }
 
+       stage('Greet') {
+            steps {
+                script {
+                    echo Greeter.greet("User")
+                }
+            }
+        }
         stage('Checkout External Project') {
             steps {
                 git branch: 'main',
