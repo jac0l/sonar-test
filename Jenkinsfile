@@ -11,11 +11,11 @@ pipeline {
     }
 
     stages {
- //       stage('Hello') {
-//            steps {
-//                sayHello('Jenkins')
-//            }
-//        }
+        stage('Hello') {
+            steps {
+                sayHello('Jenkins-hello')
+            }
+        }
 
         stage('Checkout External Project') {
             steps {
