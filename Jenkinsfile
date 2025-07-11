@@ -1,4 +1,4 @@
-@Library('my-shared-lib') _
+//@Library('my-shared-lib') _
 pipeline {
     agent any
 
@@ -11,11 +11,11 @@ pipeline {
     }
 
     stages {
-        stage('Hello') {
-            steps {
-                sayHello('Jenkins')
-            }
-        }
+ //       stage('Hello') {
+//            steps {
+//                sayHello('Jenkins')
+//            }
+//        }
 
         stage('Checkout External Project') {
             steps {
