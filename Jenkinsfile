@@ -1,4 +1,6 @@
 @Library('my-shared-lib') _
+import org.example.Greeter
+
 pipeline {
     agent any
 
